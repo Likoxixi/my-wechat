@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vue.js"></script>
+    <script src="js/vue-router.js"></script>
+    <style>
+        .trans_item {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 800px;
+
+        }
+
+        .container {
+            width: 100%;
+            height: 800px;
+        }
+
+        .my_page {
+            width: 100%;
+            height: 800px;
+        }
+
+        .leftToright-enter {
+            transform: translateX(100%);
+        }
+
+        .rightToleft-enter {
+            transform: translateX(-100%);
+        }
+
+        .leftToright-enter-active,
+        .leftToright-leave-active,
+        .rightToleft-enter-active,
+        .rightToleft-leave-active {
+            position: absolute;
+            transition: all 1s;
+        }
+
+        .leftToright-leave-to {
+            transform: translateX(-100%);
+        }
+
+        .rightToleft-leave-to {
+            transform: translateX(100%)
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+        <router-view></router-view>
+    </div>
+</body>
+<script src="js/index.js" type="module"></script>
+
+</html>

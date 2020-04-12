@@ -1,0 +1,880 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.container {
+    margin: 0 auto;
+}
+.middle{
+    width: 100%;
+    margin-top: 52px;
+}
+.container .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(237,237,237);
+    z-index: 9999;
+}
+
+.container .header .header_container {
+    display: flex;
+    padding: 10px 0 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header span {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.container .header i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.container .header i.search {
+    background: url(../image/search.png) center center no-repeat;
+    background-size: 18px 18px
+}
+
+.container .header i.add {
+    margin-left: 35px;
+    padding: 5px 25px 0 0;
+    background: url(../image/add.png) center bottom no-repeat;
+    background-size: 18px 18px;
+}
+
+.item_container {
+    display: flex;
+    width: 100%;
+}
+
+.head_image {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin: 15px 0 0 10px;
+    background-color: chocolate;
+    border-radius: 6px;
+}
+
+.item_container .head_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.item_container .chat_content {
+    width: 100%;
+    height: 60px;
+    margin-left: 15px;
+    padding-top: 20px;
+    border-bottom: 1px solid #bbb;
+}
+
+.item_container .chat_header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.15em;
+}
+
+.item_container .item_time {
+    padding-right: 12px;
+    color: #aaa;
+    font-size: 0.8em;
+}
+
+.item_container article {
+    padding-top: 2px;
+    font-size: 0.93em;
+    color: #aaa;
+}
+
+.nav_footer {
+    display: flex;
+    height: 24px;
+}
+.nav_name{
+    display: flex;
+    height: 20px;
+}
+.nav_footer .nav_item{
+    width: 25%;
+}
+.bar_item .name_item{
+    font-size: 0.9em;
+    text-align: center;
+    
+}
+
+.nav_item.first{
+    height: 25px;
+    background: url(../image/information.png) center center no-repeat;
+    background-size: 24px 24px;
+}
+.nav_item.first.active{
+    height: 25px;
+    background: url(../image/greeninfor.png) center center no-repeat;
+    background-size: 24px 24px;
+}
+.nav_item.second{
+    height: 25px;
+    background: url(../image/relative.png) center center no-repeat;
+    background-size: 24px 24px;
+}
+.nav_item.second.active{
+    height: 25px;
+    background: url(../image/greentwo.png) center center no-repeat;
+    background-size: 28px 28px;
+}
+.nav_item.third{
+    height: 25px;
+    background: url(../image/find.png) center center no-repeat;
+    background-size: 24px 24px;
+}
+.nav_item.third.active{
+    height: 25px;
+    background: url(../image/findgreen.png) center center no-repeat;
+    background-size: 24px 24px;
+}
+
+.nav_item.fourth{
+    height: 25px;
+    background: url(../image/me.png) center center no-repeat;
+    background-size: 24px 24px;
+}
+.nav_item.fourth.active{
+    height: 25px;
+    background: url(../image/lastgreen.png) center center no-repeat;
+    background-size: 20px 20px;
+}
+.footer_container{
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(247,247,247);
+}
+
+/* 通讯录 */
+
+.infor_image,
+.infors_image,
+.label_image,
+.offical_image,
+.friendcircle_image,
+.scan_image,
+.shark_image,
+.see_image,
+.search_image,
+.near_image,
+.shop_image,
+.game_image,
+.routine_image,
+.pay_image,
+.collect_image,
+.photo_image,
+.card_image,
+.face_image,
+.set_image{
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin: 15px 0 0 10px;
+    border-radius: 6px;  
+}
+.infor_image{
+    background: url(../image/newfriend.png) center center no-repeat;
+    background-color: rgb(249,157,58);
+}
+.infors_image{
+    background: url(../image/friendschat.png) center center no-repeat;
+    background-size: 20px 20px;
+    background-color: rgb(6,192,95);
+}
+.label_image{
+    background: url(../image/label.png) center center no-repeat;
+    background-color: rgb(39,130,213);
+}
+.offical_image{
+    background: url(../image/offical.png) center center no-repeat;
+    background-color: rgb(39,130,213);
+}
+.friendcircle_image{
+    background: url(../image/friendcircle.png) center center no-repeat;
+}
+.scan_image{
+    background: url(../image/scan.png) center center no-repeat;
+}
+.shark_image{
+    background: url(../image/shark.png) center center no-repeat;
+}
+.see_image{
+    background: url(../image/see.png) center center no-repeat;
+}
+.search_image{
+    background: url(../image/searchone.png) center center no-repeat;
+}
+.near_image{
+    background: url(../image/near.png) center center no-repeat;
+    background-size: 24px 24px;
+}
+.shop_image{
+    background: url(../image/shop.png) center center no-repeat;
+}
+.game_image{
+    background: url(../image/game.png) center center no-repeat;
+
+}
+.routine_image{
+    background: url(../image/routine.png) center center no-repeat;
+    background-size: 24px 24px;
+}
+.pay_image{
+    background: url(../image/pay.png) center center no-repeat;
+    background-size: 24px 24px;
+
+}
+.card_image{
+    background: url(../image/card.png) center center no-repeat;
+
+}
+.photo_image{
+    background: url(../image/photo.png) center center no-repeat;
+
+}
+.face_image{
+    background: url(../image/face.png) center center no-repeat;
+
+}
+.collect_image{
+    background: url(../image/collect.png) center center no-repeat;
+
+}
+.set_image{
+    background: url(../image/set.png) center center no-repeat;
+
+}
+.collect_image,
+.photo_image,
+.card_image,
+.face_image,
+.see_image
+.scan_image,
+.shark_image,
+.set_image{
+    background-size: 24px 24px;
+}
+
+.infor_container{
+    display: flex;
+}
+.infor_item{
+    width: 100%;
+    height: 40px;
+    margin-left: 15px;
+    padding-top: 23px;
+}
+.infor_item_{
+    width: 100%;
+    height: 40px;
+    margin-left: 15px;
+    padding-top: 23px;
+}
+.infor_item.line,
+.infor_item_.line{
+    border-bottom: 1px solid rgb(237,237,237);
+}
+.interlayer{
+    width: 100%;
+    height: 30px;
+    background-color:rgb(237,237,237);
+}
+.interlayer span{
+    display: inline-block;
+    padding-left: 10px;
+    color: rgb(187,188,188);
+    line-height: 30px;
+}
+.fix{
+    width: 100%;
+    height: 8px;
+    background-color: rgb(237,237,237);
+}
+.name{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.wechat_account{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px !important;
+}
+.chat_content_account{
+    width: 80%;
+    height: 90px;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+.wechat_account .QR{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    padding-top: 8px;
+    background: url(../image/QR.png) center center no-repeat;
+    background-size: 12px 12px;
+}
+.wechat_account .right{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    padding-right: 25px;
+    padding-top: 5px;
+    background: url(../image/right.png) center center no-repeat;
+    background-size: 12px 12px;
+}
+.wechat_account .two_item{
+    padding-right: 12px;
+}
+
+.infor_item{
+    display: flex;
+    justify-content: space-between;
+}
+.item_right{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    padding:11px 25px 0 0;
+    background: url(../image/right.png) center center no-repeat;
+    background-size: 12px 12px;
+}
+.foot_bar{
+    display: flex;
+    height: 50px;
+    background-color: rgb(247,247,247);
+}
+.bar_item{
+    width: 25%;
+}
+.container{
+    overflow: auto;
+}
+.bgdcolor{
+    color: rgb(6,192,95);
+}
+
+/* 聊天 */
+
+.chat_container {
+    overflow: auto;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(237, 237, 237);
+}
+
+.chat_header_,
+.chat_middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat_header_ {
+    padding: 10px 0 15px 0;
+}
+
+.header {
+    background-color: rgb(237, 237, 237);
+    border-bottom: 1px solid #ccc;
+}
+
+.chat_header_ i,
+.chat_footer_ i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.left_ {
+    margin-left: 15px;
+    background: url(../image/left.png) center center no-repeat;
+    background-size: 18px 18px;
+}
+
+.left_,
+.name_,
+.more,
+.voice,
+.face,
+.add_,
+.chat_input {
+    vertical-align: middle;
+}
+
+.more {
+    margin-right: 20px;
+    background: url(../image/more.png) center center no-repeat;
+    background-size: 18px 18px;
+}
+
+.chat_middle {
+    margin-top: 20px;
+}
+
+.friend_container {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    margin-left: 18px;
+    border-radius: 6px;
+}
+
+.chat_img_container {
+    width: 100%;
+    height: 100%;
+}
+
+.chat_img_container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.chat_content_container {
+    width: 100%;
+    margin-left: 18px;
+}
+
+.chat_content_ {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.external_container {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+}
+
+.external_container::before {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: -15px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-color: transparent white transparent transparent;
+    border-width: 8px;
+    border-style: solid;
+}
+.voice {
+    margin-left: 15px;
+    background: url(../image/vvlio.png) center center no-repeat;
+    background-size: 18px 18px;
+}
+
+.face {
+    margin-right: 10px;
+    background: url(../image/happy.png) center center no-repeat;
+    background-size: 20px 20px;
+}
+
+.add_ {
+    margin-right: 10px;
+    background: url(../image/add.png) center center no-repeat;
+    background-size: 18px 18px;
+}
+
+.footer_overall {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.chat_footer_ {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(246, 246, 246);
+}
+
+.chat_input {
+    flex-grow: 1;
+    height: 30px;
+    margin: 0 10px;
+    padding-left: 5px;
+    border-style: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+/* 个人信息 */
+
+.person_container{
+    width: 100%;
+}
+.personal_header {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+   
+}
+
+.personal_header i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../image/left.png) center center no-repeat;
+    background-size: 18px 18px;
+}
+.person_infor{
+    margin-left: 10px;
+}
+.person_headerimg,
+.detail_item{
+    background-color: white;
+    border-bottom: 1px solid rgb(237,237,237);
+}
+.person_headerimg_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0;
+}
+.img_container{
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+.img_container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.right_item{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background: url(../image/right.png) center center no-repeat ;
+    background-size: 12px 12px;
+}
+.right_container{
+    display: flex;
+    align-items: center;
+}
+.word_content{
+    margin-left: 10px;
+}
+.detail_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 10px;
+}
+.name_container{
+    display: flex;
+    align-items: center;
+}
+.detail_name{
+    margin-right: 15px;
+}
+.detail_QR{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+    background: url(../image/QR.png) center center no-repeat;
+    background-size: 22px 23px;
+}
+.mixed{
+    margin-top: 10px;
+}
+
+/* 通许录 */
+.good_friend{
+    display: flex;
+}
+.good_friend_container{
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin: 15px 0 0 10px;
+    border-radius: 6px;
+}
+.good_friend_container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.good_friend_word{
+    width: 100%;
+    height: 40px;
+    margin-left: 15px;
+    padding-top: 23px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+/* 通讯录朋友样式 */
+.infor_container_ {
+    overflow: auto;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(237, 237, 237);
+}
+
+.chet_header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.chet_header {
+    padding: 10px 0 15px 0;
+}
+
+
+
+.peleft {
+    margin-left: 15px;
+    background: url(../image/left.png) center center no-repeat;
+    background-size: 18px 18px;
+}
+
+.chet_header i,
+.chat_footer i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.more {
+    margin-right: 20px;
+    background: url(../image/more.png) center center no-repeat;
+    background-size: 18px 18px;
+}
+
+.infor_left_container {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+
+}
+
+.infor_left_container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.infor_content {
+    display: flex;
+    height: 100px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.infor_right_container {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.infor_name {
+    font-weight: bold;
+}
+
+.person_container {
+    margin-top: 5px;
+}
+
+.infor_area {
+    margin-top: 5px;
+}
+
+.footer_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.infor_right {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-top: 6px;
+    background: url(../image/right.png) center center no-repeat;
+    background-size: 12px 12px;
+}
+.blue_infor{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    background: url(../image/blueinfor.png) center center no-repeat;
+    background-size: 22px 19px;
+}
+.blue_video{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    background: url(../image/video.png) center center no-repeat;
+    background-size: 22px 22px;
+}
+.mixed{
+    margin-top: 10px;
+}
+.last{
+    justify-content: center;
+    color: rgb(93,116,147);
+}
+/* 朋友圈 */
+.friend_circle_container{
+    width: 100%;
+    height: 800px;
+}
+.icon_container{
+    display:flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+.icon_container i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.left{
+    background: url(../image/whiteleft.png) center center no-repeat;
+    background-size: 18px 18px;
+}
+.friend_circle_header{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: rosybrown;
+}
+.photo{
+    background: url(../image/whitephoto.png) center center no-repeat;
+    background-size: 20px 20px;
+}
+.friend_circle_word{
+    color: white;
+    margin-top: 100px;
+    text-align: right;
+    margin-right: 80px;
+}
+.friend_circle_img_container{
+    position: absolute;
+    right: 11px;
+    bottom: -15px;
+    width: 60px;
+    height: 60px;
+}
+.friend_circle_img_container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+/* 朋友圈 */
+
+.friend_say_left {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.friend_say_left img {
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    border-radius: 6px;
+}
+
+.saysay_container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.friend_content_ {
+    margin-left: 15px;
+}
+
+.content_img {
+    width: 150px;
+    height: 200px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.content_img img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin-top: 5px;
+}
+
+.friend_-name {
+    font-size: 15px;
+    color: rgb(39, 130, 213);
+}
+
+.circle_footer {
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    border-bottom: 1px solid rgb(237,237,237);
+}
+
+.time {
+    margin-left: 43px;
+    color: #666;
+    font-size: 12px;
+}
+.comment{
+    display: inline-block;
+    width: 22px;
+    height: 12px;
+    margin-top: 3px;
+    margin-right: 10px;
+    background: url(../image/more.png) center center no-repeat;
+    background-size: 18px 18px;
+}
+@media screen and (max-width:767px) {
+    .container {
+        widows: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        widows: 750px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        widows: 970px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        widows: 1170px;
+    }
+}
